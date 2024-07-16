@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions Dashboard || Asmaa Mohamed</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <h1>Customer Transactions Dashboard </h1>
+    </header>
+
+    <main>
+        <section id="transactionsSection">
+            <h2>Transactions</h2>
+            <div class="filters row">
+                <div class="col-md-6">
+                    <input type="text" id="customerNameFilter" placeholder="Filter by Customer Name">
+                </div>
+                <div class=" col-md-6">
+                    <input type="number" id="transactionAmountFilter" placeholder="Filter by Amount">
+                </div>
+               
+            </div>
+            <table id="transactionTable"class= " rounded">
+                <thead>
+                    <tr >
+                        <th class=" bg-b">Customer Name</th>
+                        <th class=" bg-b">Date</th>
+                        <th class=" bg-b">Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTableBody">
+                </tbody>
+            </table>
+            <canvas id="transactionChart"></canvas>
+        </section>
+
+        <section id="customerChartSection" style="display: none;">
+            <h2>Customer Transaction Chart</h2>
+            <div id="chartContainer"></div>
+        </section>
+    </main>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
+
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions Dashboard</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <h1>Customer Transactions Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="transactionsSection">
+            <h2>Transactions</h2>
+            <div class="filters">
+                <input type="text" id="customerNameFilter" placeholder="Filter by Customer Name">
+                <input type="number" id="transactionAmountFilter" placeholder="Filter by Amount">
+            </div>
+            <table id="transactionTable">
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTableBody">
+                </tbody>
+            </table>
+            <canvas id="transactionChart"></canvas>
+        </section>
+
+        <section id="customerChartSection" style="display: none;">
+            <h2>Customer Transaction Chart</h2>
+            <div id="chartContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Customer Transactions Dashboard</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html> -->
